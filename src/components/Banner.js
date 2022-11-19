@@ -51,15 +51,15 @@ export const Banner = () => {
               <span
                 className='txt-rotate'
                 dataperiod='1000'
-                data-rotate='[ "React Native", "React"]'
+                data-rotate='[ "React JS", " React Native"]'
               >
                 <span className='wrap'>{text}</span>
               </span>
             </h1>
             <p>
               Frontend Engineer with 3+ years of professional experiences in Web
-              Designing.I am specialize in JavaScript. And i love playing
-              football.
+              Development.I have worked on both web and mobile application.
+							And i love playing football.
             </p>
             <button
               onClick={() =>
