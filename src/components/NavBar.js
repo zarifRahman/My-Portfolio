@@ -29,9 +29,9 @@ function NavBar() {
   return (
     <Navbar expand='lg' className={scrolled ? "scrolled" : ""}>
       <Container>
-        <Navbar.Brand href='#home'>
+        {/* <Navbar.Brand href='#home'>
           <img src={logo} alt='Logo' />
-        </Navbar.Brand>
+        </Navbar.Brand> */}
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='ms-auto'>
