@@ -1,0 +1,11 @@
+/* NavBar.css */
+.custom-button {
+  background-color: rgba(170, 54, 124, 0.5);
+  border: none;
+  color: white;
+  margin-left: 10px;
+}
+
+.custom-button:hover {
+  background-color: rgba(170, 54, 124, 0.7);
+}

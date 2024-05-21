@@ -1,30 +1,31 @@
-import React, { useEffect, useState } from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
-import logo from '../assets/img/logo.svg';
-
+import React, { useEffect, useState } from "react";
+import { Container, Nav, Navbar, Button } from "react-bootstrap";
+import navIcon1 from "../assets/img/nav-icon1.svg";
+import navIcon2 from "../assets/img/nav-icon2.svg";
+import navIcon3 from "../assets/img/nav-icon3.svg";
+import logo from "../assets/img/logo.svg";
+import cv from "../assets/CV.pdf";
+import "../style/NavBar.css";
 
 function NavBar() {
-  const [activeLink, setActiveLink] = useState('home');
+  const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
 
-	useEffect(() => {
-		const onScroll = () => {
-			if (window.scrollY > 50) {
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 50) {
         setScrolled(true);
       } else {
         setScrolled(false);
       }
-		}
-		window.addEventListener("scroll", onScroll);
+    };
+    window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
-	},[])
+  }, []);
 
-	const onUpdateActiveLink = (value) => {
-		setActiveLink(value)
-	}
+  const onUpdateActiveLink = (value) => {
+    setActiveLink(value);
+  };
 
   return (
     <Navbar expand='lg' className={scrolled ? "scrolled" : ""}>
@@ -65,7 +66,11 @@ function NavBar() {
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
-              <a href='https://www.linkedin.com/in/zarif-shahriar-rahman-634142173/' target='_blank' rel="noreferrer">
+              <a
+                href='https://www.linkedin.com/in/zarif-shahriar-rahman-634142173/'
+                target='_blank'
+                rel='noreferrer'
+              >
                 <img src={navIcon1} alt='' />
               </a>
               <a href='#'>
@@ -75,17 +80,14 @@ function NavBar() {
                 <img src={navIcon3} alt='' />
               </a>
             </div>
-            {/* <button
-              className='vvd'
-              onClick={() =>
-                window.open(
-                  "https://www.linkedin.com/in/zarif-shahriar-rahman-634142173/",
-                  "_blank"
-                )
-              }
+            <Button
+              className='custom-button'
+              href={cv}
+              target='_blank'
+              rel='noopener noreferrer'
             >
-              <span>Let’s Connect</span>
-            </button> */}
+              <span style={{ color: "white" }}>Download My CV</span>
+            </Button>
           </span>
         </Navbar.Collapse>
       </Container>
