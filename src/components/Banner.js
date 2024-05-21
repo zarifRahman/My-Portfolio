@@ -57,7 +57,7 @@ export const Banner = () => {
               </span>
             </h1>
             <p>
-              Frontend Engineer with 3+ years of professional experiences in Web
+              Frontend Engineer with 5+ years of professional experiences in Web
               Development.I have worked on both web and mobile application.
 							And i love playing football.
             </p>
