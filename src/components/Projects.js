@@ -1,32 +1,58 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
+import projImg2 from "../assets/img/project-img5.png";
 import projImg3 from "../assets/img/project-img3.png";
-import projImg4 from "../assets/img/proj-img.png";
+import shikhoImg from "../assets/img/shikho.png";
+import bohubrihiImg from "../assets/img/bohubrihi.png";
+import shikhoShopImg from "../assets/img/shikho-shop.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import projImg5 from "../assets/img/netflix.jpeg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 const Projects = () => {
-  const projects = [
+  const projectsTab1 = [
     {
-      title: "Netflix Clone",
-      description: "Build with React and Styled Component",
-      imgUrl: projImg5,
-      link: "https://github.com/zarifRahman/netflix-clone",
+      title: "Shikho",
+      description: "Educational Platform",
+      imgUrl: shikhoImg,
+      link: "https://shikho.com/",
+    },
+    {
+      title: "Bohubrihi",
+      description: "Online Learning Platform",
+      imgUrl: bohubrihiImg,
+      link: "https://bohubrihi.com/",
+    },
+    {
+      title: "Shikho CMS",
+      description: "Content Management System",
+      imgUrl: projImg2,
+      link: "https://cms.shikho.com/",
+    },
+  ];
+
+  const projectsTab2 = [
+    {
+      title: "Shikho Shop",
+      description: "E-commerce Platform",
+      imgUrl: shikhoShopImg,
+      link: "https://shop.shikho.com/",
     },
     {
       title: "Grameen Digital Health",
       description: "Grameen Digital Health Website",
-      imgUrl: projImg4,
+      imgUrl: projImg1,
       link: "https://grameendh.com/",
     },
+  ];
+
+  const projectsTab3 = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Shikho CMS",
+      description: "Content Management System",
+      imgUrl: projImg2,
+      link: "https://cms.shikho.com/",
     },
   ];
 
@@ -43,7 +69,15 @@ const Projects = () => {
                   }
                 >
                   <h2>Projects</h2>
-                  <p>These are the lists of Project I have work on.</p>
+                  <p>
+                    <p>
+                      Here are some of the projects I’ve worked on, ranging from
+                      educational platforms to e-commerce solutions. These
+                      projects highlight my experience in building scalable web
+                      applications, creating user-friendly interfaces, and
+                      delivering real-world digital products.
+                    </p>
+                  </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
                       variant="pills"
@@ -68,28 +102,24 @@ const Projects = () => {
                     >
                       <Tab.Pane eventKey="first">
                         <Row>
-                          {projects.map((project, index) => {
+                          {projectsTab1.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
+                        <Row>
+                          {projectsTab2.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
+                        </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
+                        <Row>
+                          {projectsTab3.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
+                        </Row>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
@@ -103,7 +133,7 @@ const Projects = () => {
         className="background-image-right"
         src={colorSharp2}
         alt="background"
-      />
+      ></img>
     </section>
   );
 };
