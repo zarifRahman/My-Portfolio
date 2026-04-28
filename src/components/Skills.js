@@ -27,6 +27,7 @@ const Skills = () => {
       items: 1,
     },
   };
+
   return (
     <section className="skill" id="skills">
       <div className="container">
@@ -41,19 +42,19 @@ const Skills = () => {
                 className="owl-carousel owl-theme skill-slider"
               >
                 <div className="item">
-                  <img src={meter1} alt="test1" />
+                  <img src={meter1} alt="React Skill Meter" />
                   <h5>React</h5>
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="test2" />
+                  <img src={meter2} alt="Javascript Skill Meter" />
                   <h5>Javascript</h5>
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="test3" />
+                  <img src={meter3} alt="CSS Skill Meter" />
                   <h5>CSS</h5>
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="test4" />
+                  <img src={meter3} alt="React Native Skill Meter" />
                   <h5>React Native</h5>
                 </div>
               </Carousel>
@@ -61,7 +62,11 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <img className="background-image-left" src={colorSharp} alt="test7" />
+      <img
+        className="background-image-left"
+        src={colorSharp}
+        alt="Background Design"
+      />
     </section>
   );
 };

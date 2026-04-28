@@ -75,8 +75,8 @@ export const Banner = () => {
             </button>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <div className="animate__animated animate__zoomIn">
-              <img src={headerImg} alt="Header" />
+            <div className='animate__animated animate__zoomIn'>
+              <img src={headerImg} alt='Banner' />
             </div>
           </Col>
         </Row>
