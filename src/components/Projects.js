@@ -69,13 +69,11 @@ const Projects = () => {
                 >
                   <h2>Projects</h2>
                   <p>
-                    <p>
-                      Here are some of the projects I’ve worked on, ranging from
-                      educational platforms to e-commerce solutions. These
-                      projects highlight my experience in building scalable web
-                      applications, creating user-friendly interfaces, and
-                      delivering real-world digital products.
-                    </p>
+                    Here are some of the projects I’ve worked on, ranging from
+                    educational platforms to e-commerce solutions. These
+                    projects highlight my experience in building scalable web
+                    applications, creating user-friendly interfaces, and
+                    delivering real-world digital products.
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav

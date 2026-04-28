@@ -14,11 +14,6 @@ export const Banner = () => {
   const toRotate = ["React Native", "React"];
   const period = 2000;
 
-  useEffect(() => {
-    const ticker = setTimeout(() => tick(), delta);
-    return () => clearTimeout(ticker);
-  }, [delta, text, tick]);
-
   const tick = () => {
     const i = loopNum % toRotate.length;
     const fullText = toRotate[i];
@@ -43,6 +38,11 @@ export const Banner = () => {
       setIndex((prevIndex) => prevIndex + 1);
     }
   };
+
+  useEffect(() => {
+    const ticker = setTimeout(() => tick(), delta);
+    return () => clearTimeout(ticker);
+  }, [delta, text, tick]);
 
   return (
     <section className="banner" id="home">
