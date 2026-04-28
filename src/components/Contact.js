@@ -4,6 +4,7 @@ import contactImg from "../assets/img/contact-img.svg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 export const Contact = () => {
   const form = useRef();
@@ -34,13 +35,13 @@ export const Contact = () => {
         process.env.REACT_APP_EMAILJS_SERVICE_ID,
         process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         form.current,
-        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
       )
       .then(
         (result) => {
           setButtonText("Send");
           setFormDetails(formInitialDetails);
-          setStatus({ success: true, message: "Message sent successfully" });
+          toast.success("Message sent successfully!");
         },
         (error) => {
           setButtonText("Send");
@@ -48,7 +49,8 @@ export const Contact = () => {
             success: false,
             message: "Something went wrong, please try again later.",
           });
-        }
+          toast.error("Something went wrong, please try again later.");
+        },
       );
   };
 
@@ -77,7 +79,17 @@ export const Contact = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h2>Get In Touch</h2>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: 0,
+                      marginBottom: "20px",
+                    }}
+                  >
+                    <h2>Get In Touch</h2>
+                    <h4>Please write a mail and I'll get back to you soon.</h4>
+                  </div>
                   <form ref={form} onSubmit={handleSubmit}>
                     <Row>
                       <Col size={12} sm={6} className="px-1">
@@ -139,10 +151,12 @@ export const Contact = () => {
                         </button>
                       </Col>
                       {status.message && (
-                        <Col>
+                        <Col key={status.message}>
                           <p
                             className={
-                              status.success === false ? "danger" : "success"
+                              status.success === false
+                                ? "danger animate__animated animate__fadeInUp"
+                                : "success animate__animated animate__fadeInUp"
                             }
                           >
                             {status.message}
