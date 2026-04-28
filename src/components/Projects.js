@@ -8,6 +8,7 @@ import shikhoShopImg from "../assets/img/shikho-shop.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import dxBall from "../assets/img/dx-ball.png";
 
 const Projects = () => {
   const projectsTab1 = [
@@ -32,6 +33,12 @@ const Projects = () => {
   ];
 
   const projectsTab2 = [
+    {
+      title: "DX Ball",
+      description: "Let play a Game",
+      imgUrl: dxBall,
+      link: "https://dx-ball-six.vercel.app/",
+    },
     {
       title: "Shikho Shop",
       description: "E-commerce Platform",
