@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
@@ -16,7 +17,8 @@ export const Banner = () => {
   useEffect(() => {
     const ticker = setTimeout(() => tick(), delta);
     return () => clearTimeout(ticker);
-  }, [text]);
+    // eslint-disable-next-line no-use-before-define
+  }, [delta, text, tick]);
 
   const tick = () => {
     const i = loopNum % toRotate.length;
