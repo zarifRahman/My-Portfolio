@@ -2,7 +2,6 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img5.png";
-import projImg3 from "../assets/img/project-img3.png";
 import shikhoImg from "../assets/img/shikho.png";
 import bohubrihiImg from "../assets/img/bohubrihi.png";
 import shikhoShopImg from "../assets/img/shikho-shop.png";
