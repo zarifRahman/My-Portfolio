@@ -17,7 +17,6 @@ export const Banner = () => {
   useEffect(() => {
     const ticker = setTimeout(() => tick(), delta);
     return () => clearTimeout(ticker);
-    // eslint-disable-next-line no-use-before-define
   }, [delta, text, tick]);
 
   const tick = () => {
