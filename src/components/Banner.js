@@ -8,6 +8,7 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
+  // eslint-disable-next-line no-unused-vars
   const [index, setIndex] = useState(1);
   const toRotate = ["React Native", "React"];
   const period = 2000;
@@ -75,8 +76,8 @@ export const Banner = () => {
             </button>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <div className='animate__animated animate__zoomIn'>
-              <img src={headerImg} alt='Banner' />
+            <div className="animate__animated animate__zoomIn">
+              <img src={headerImg} alt="Banner" />
             </div>
           </Col>
         </Row>
