@@ -41,19 +41,19 @@ const Skills = () => {
                 className="owl-carousel owl-theme skill-slider"
               >
                 <div className="item">
-                  <img src={meter1} alt="Image1" />
+                  <img src={meter1} alt="test1" />
                   <h5>React</h5>
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="Image2" />
+                  <img src={meter2} alt="test2" />
                   <h5>Javascript</h5>
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="Image3" />
+                  <img src={meter3} alt="test3" />
                   <h5>CSS</h5>
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="Image4" />
+                  <img src={meter3} alt="test4" />
                   <h5>React Native</h5>
                 </div>
               </Carousel>
@@ -61,7 +61,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <img className="background-image-left" src={colorSharp} alt="Image7" />
+      <img className="background-image-left" src={colorSharp} alt="test7" />
     </section>
   );
 };
