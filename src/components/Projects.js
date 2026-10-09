@@ -4,7 +4,7 @@ import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img5.png";
 import shikhoImg from "../assets/img/shikho.png";
 import bohubrihiImg from "../assets/img/bohubrihi.png";
-import shikhoShopImg from "../assets/img/shikho-shop.png";
+import shikhoShopImg from "../assets/img/shekhar-alo.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -40,10 +40,11 @@ const Projects = () => {
       link: "https://dx-ball-six.vercel.app/",
     },
     {
-      title: "Shikho Shop",
-      description: "E-commerce Platform",
+      title: "Alor Shikha",
+      description:
+        "A joint online quiz competition platform run by the Bangladeshi education technology platform Shikho in collaboration with the national newspaper Prothom Alo",
       imgUrl: shikhoShopImg,
-      link: "https://shop.shikho.com/",
+      link: "https://alor-shikha.com/",
     },
     {
       title: "Grameen Digital Health",
