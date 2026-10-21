@@ -9,6 +9,7 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import dxBall from "../assets/img/dx-ball.png";
+import onePdf from "../assets/img/onepdf.png";
 
 const Projects = () => {
   const projectsTab1 = [
@@ -38,6 +39,12 @@ const Projects = () => {
       description: "Let play a Game",
       imgUrl: dxBall,
       link: "https://dx-ball-six.vercel.app/",
+    },
+    {
+      title: "OnePDF",
+      description: "In-browser PDF manager",
+      imgUrl: onePdf,
+      link: "https://onepdf-three.vercel.app/",
     },
     {
       title: "Alor Shikha",
