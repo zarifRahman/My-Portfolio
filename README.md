@@ -2,6 +2,8 @@
 
 A personal portfolio website for Zarif Shahriar Rahman, a Frontend Engineer with 5+ years of experience in web and mobile development. Built with React, the site features a space-themed design, a typing animation in the hero, an animated skills carousel, tabbed project showcases, a working contact form, and a newsletter subscription.
 
+[View the live portfolio](https://zarif-personal-blog-5uzusw26y-zarifs-projects-03f15b7a.vercel.app/)
+
 ![Homepage hero](docs/screenshot-hero.png)
 
 ## Screenshots
