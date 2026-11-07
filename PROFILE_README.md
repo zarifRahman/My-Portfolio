@@ -9,7 +9,7 @@
 </h1>
 
 <p align="center">
-  <a href="https://zarif-personal-blog-5uzusw26y-zarifs-projects-03f15b7a.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-38BDAE?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
+  <a href="https://zarif-portfolio.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-38BDAE?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
   <a href="https://zarif-dev-diaries.vercel.app/"><img src="https://img.shields.io/badge/Dev_Diaries_Blog-FF5722?style=for-the-badge&logo=hashnode&logoColor=white" alt="Blog"/></a>
   <a href="mailto:zarif.shahriar.rahman@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
   <img src="https://komarev.com/ghpvc/?username=zarifRahman&style=for-the-badge&color=38BDAE" alt="Profile views"/>
@@ -67,7 +67,7 @@ const zarif = {
 
 | Project | Description | Links |
 |:--|:--|:--|
-| **Portfolio** | Space-themed personal site — typing hero, animated skills carousel, live contact form | [Live](https://zarif-personal-blog-5uzusw26y-zarifs-projects-03f15b7a.vercel.app/) |
+| **Portfolio** | Space-themed personal site — typing hero, animated skills carousel, live contact form | [Live](https://zarif-portfolio.vercel.app/) |
 | **DX-Ball** 🎮 | Fullscreen brick-breaker built with Next.js + Canvas 2D | [Live](https://dx-ball-5luouyi03-zarifs-projects-03f15b7a.vercel.app/) · [Code](https://github.com/zarifRahman/dx-ball) |
 | **Dev Diaries** ✍️ | My blog — writing about web dev and things I learn | [Visit](https://zarif-dev-diaries.vercel.app/) |
 

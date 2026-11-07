@@ -7,6 +7,6 @@ test("renders portfolio landing page content", () => {
   expect(headline).toBeInTheDocument();
   expect(screen.getByRole("link", { name: /blog \(opens in a new tab\)/i })).toHaveAttribute(
     "href",
-    "https://zarif-dev-diaries.vercel.app/",
+    "https://zarif-personal-blog.vercel.app/",
   );
 });

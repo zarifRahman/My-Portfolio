@@ -64,7 +64,7 @@ function NavBar() {
               Projects
             </Nav.Link>
             <Nav.Link
-              href="https://zarif-dev-diaries.vercel.app/"
+              href="https://zarif-personal-blog.vercel.app/"
               className="navbar-link"
               target="_blank"
               rel="noopener noreferrer"
