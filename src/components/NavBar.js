@@ -63,6 +63,15 @@ function NavBar() {
             >
               Projects
             </Nav.Link>
+            <Nav.Link
+              href="https://zarif-dev-diaries.vercel.app/"
+              className="navbar-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Blog (opens in a new tab)"
+            >
+              Blog
+            </Nav.Link>
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
